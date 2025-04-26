@@ -38,7 +38,7 @@ AVX (256 ביט)
 הגדרת ערכים: _mm256_set1_epi32, _mm256_set1_ps, _mm256_set1_pd​
 אחסון מיושר: _mm256_store_si256, _mm256_store_ps, _mm256_store_pd​
 אחסון לא מיושר: _mm256_storeu_si256, _mm256_storeu_ps, _mm256_storeu_pd​
-אחסון ללא עצירה במטמון: _mm256_stream_si128, _mm256_stream_ps, _mm256_stream_pd​
+אחסון ללא עצירה במטמון: _mm256_stream_si256, _mm256_stream_ps, _mm256_stream_pd​
 
 
 
