@@ -9,8 +9,8 @@ int main() {
     constexpr size_t alignment = 32;
 
     // הקצאה מיושרת ל-24 שלמים
-    int* input  = static_cast<int*>(aligned_alloc(alignment, num_elements * sizeof(int)));
-    int* output = static_cast<int*>(aligned_alloc(alignment, num_elements * sizeof(int)));
+    int* input  = (int*)(aligned_alloc(alignment, num_elements * sizeof(int)));
+    int* output = (int*)(aligned_alloc(alignment, num_elements * sizeof(int)));
 
     if (!input || !output) {
         std::cerr << "Memory allocation failed!" << std::endl;

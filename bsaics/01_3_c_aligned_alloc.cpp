@@ -10,8 +10,8 @@ int main() {
     constexpr size_t alignment = 32;
 
     // הקצאת זיכרון מיושר ב-heap עבור קלט ופלט
-    int* input  = static_cast<int*>(aligned_alloc(alignment, num_elements * sizeof(int)));
-    int* output = static_cast<int*>(aligned_alloc(alignment, num_elements * sizeof(int)));
+    int* input  = (int*)(aligned_alloc(alignment, num_elements * sizeof(int)));
+    int* output = (int*)(aligned_alloc(alignment, num_elements * sizeof(int)));
 
     // בדיקת הצלחה
     if (!input || !output) {
